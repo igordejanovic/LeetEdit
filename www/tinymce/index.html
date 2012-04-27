@@ -34,10 +34,9 @@
             
             content_table = document.getElementById('content_tbl');
             content_iframe = document.getElementById('content_ifr');
-            iframe = frames['content_ifr'].document;
             mce_toolbar = document.getElementsByClassName('mceToolbar')[0];
             mce_iframeContainer = document.getElementsByClassName('mceIframeContainer')[0];
-            mce_contentBody = iframe.getElementsByClassName('mceContentBody')[0];
+            mce_contentBody = document.getElementById('content_ifr').contentDocument.getElementsByClassName('mceContentBody')[0];
             
             // Set width & height 
             content_table.style.width = '100%';
